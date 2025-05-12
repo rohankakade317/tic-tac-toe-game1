@@ -1,0 +1,326 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body, html {
+                height: 100%;
+                width: 100%;
+            }
+            .contener {
+                background-image: url(education.jpg); 
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                width: 100%;
+                height: 70px;
+                background-color: purple;
+                padding: 0 20px;
+                position: sticky;
+                top: 0;
+            }
+            .logo {
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .box-24 {
+                width: 200px;
+                height: 40px;
+                color: white;
+                margin-left: 20px;
+                padding: 8px 13px;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(5px);
+                font-size: 13px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .menu {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-left: auto; 
+            }
+            .menu select, .menu p, .menu a {
+                color: white;
+                background-color: transparent;
+                padding: 8px 12px;
+                border-radius: 5px;
+                font-size: 16px;
+                border: none;
+                font-family: sans-serif;
+            }
+            .menu p {
+                margin: 0;
+                font-weight: bold;
+            }
+            .menu a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            .menu a:hover {
+                color: #ffcc00;
+            }
+            .icon-container {
+                display: flex;
+                gap: 20px;
+            }
+            .icon {
+                width: 50px;
+                font-size: 25px;
+                cursor: pointer;
+                padding-top: 10px;
+                text-align: center;
+                transition: transform 0.3s ease;
+                color: white;
+                background-color: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(5px);
+            }
+            .icon:hover {
+                transform: scale(1.2);
+            }
+            .usa-flag {
+                background-color: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(5px);
+                color: white;
+                border-radius: 50%;
+                padding: 5px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .reviews {
+                width: 100%;
+                height: 50px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+                z-index: 1;
+            }
+            .reviews span{
+                color: green;
+            }
+            .body-contener {
+                 width: 100%;
+                 height: 100%;
+                 background-color: rgba(128, 0, 128, 0.7); 
+                backdrop-filter: blur(3px);
+                
+            }
+            .body-contener-z{
+                color: white;
+                margin: 70px 0px 20px 50px;
+                font-size:50px;
+
+            }
+            .new-line {
+            display: block;
+             margin-top: 10px; 
+            }
+            .body-contener-a {
+                color: white;
+                margin: 10px 0px 30px 50px;
+                font-size: large;
+            }
+            .body-contener-b{
+                margin: 40px 0px 20px 50px;
+                font-size: large;
+            }
+            .body-contener-b .z{
+                color: white;
+            }
+            .arrow {
+    font-size: 15px;
+    color: grey;
+    display: inline-block;
+    margin: 0 5px;
+    font-family: Arial, sans-serif;
+}
+.exclusive {
+    width: 400px;
+    height: 250px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 270px;
+    right: 70px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.education-icon {
+            display: flex;
+            margin-top: 15px;
+            background: none;
+            float: left;
+        }
+        .icon-a {
+            margin: 15px 0px 0px 15px;
+            font-size: 35px;
+            color: white;
+            background: none;
+        }
+        .exclusive-a{
+          color: white;
+          margin: 30px 0px 0px 80px ;
+          font-size: larger;
+        }
+        .exclusive-b{
+          color: white;
+          margin: 20px 0px 0px 80px ;
+          font-size: smaller;
+        }
+        .exclusive-b span{
+            margin-left: 20px;
+        }
+        .exclusive-c{
+          color: white;
+          margin: 20px 0px 0px 80px ;
+          font-size:18px;
+        }
+        .button-marg
+        {
+            margin-top: 35px;
+            margin-left: 30px;
+        }
+        .enquire-now button {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px 18px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    float: left;
+}
+
+.enquire-now button:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+.download-but button {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px 18px;
+    margin-left: 15px;
+    background-color: rgb(247, 242, 0);
+    border: none;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-but button:hover {
+    background-color: rgb(255, 223, 0); 
+    transform: scale(1.05);
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="contener">
+            <div class="header">
+                <div class="logo">
+                    <p>theknowledgeacademy</p>
+                </div>
+                <div class="box-24">
+                    <p><b>01344203999 </b>- Available 24/7</p>
+                </div>
+                <div class="menu">
+                    <select name="" id="">
+                        <option class="option" value="">Course</option>
+                    </select>
+                    <a href="#">Resources</a>
+                    <select name="" id="">
+                        <option class="option" value="">About</option>
+                    </select>
+                    <a href="#">Offers</a>
+                    <a href="#">Contact</a>
+                    <a href="#">KnowledgePass</a>
+                    <div class="icon-container">
+                        <i class="fas fa-envelope icon"></i>
+                        <i class="fas fa-search icon"></i>
+                        <div class="usa-flag">
+                            <i class="fas fa-flag-usa"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews">
+                <p>Excellent <span>★★★★☆</span> 46,005 reviews on  <span>★</span> Trustpilot</p>
+            </div>
+            <div class="body-contener">
+                <p class="body-contener-z">
+                    Top 25 Demo Website for 
+                   <span class="new-line"> Automation Testing Practice</span>
+                </p>
+               <div class="body-contener-a">
+                <p>Sienna Roerts 28 Decemeber 2024</p>
+               </div>
+               <div class="body-contener-a">
+                <p>Explore the significanceof having a Demo Website for Automation Testing and how it can enhance your</p>
+                <span class="new-line"> testing processes.Dive into the carefully curated list of the top 25 Best Demo Websites for Automationg</span>
+                <span class="new-line"> Testing. Uncover the numerous benefits that aries from using such demo Website in your testing</span>
+                <span class="new-line"> endeavours</span>
+            </div>
+            <div class="body-contener-b">
+                <p class="arrow">Home <span class="arrow">→</span> Resources <span class="arrow">→</span> Business Analysis <span class="arrow">→</span> </p><span class="z">Top 25 Demo Website for Automation Testing Practice</span></p>
+            </div>
+            </div>
+            <div class="exclusive">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap icon-a"></i>
+                </div>
+                <div class="exclusive-a">
+                    <p> Software Testing Automation Course</p>
+                 </div>
+                 <div class="exclusive-b">
+                    <p >⭐⭐⭐⭐⭐ <span>Top Roted Course</span></p>
+                </div>
+                <div class="exclusive-c">
+                    <p >Exclusive 40% OFF</p>
+                </div>
+                <div class="button-marg">
+                <div class="enquire-now">
+                    <button type="button">Enquire Now</button>
+                </div>
+                <div class="download-but">
+                    <button type="button">
+                        Download curriclum
+                    </button>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
